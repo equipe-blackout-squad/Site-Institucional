@@ -2,13 +2,18 @@
     <!-- Author: FormBold Team -->
     <!-- Learn More: https://formbold.com -->
 
-    <video class="videozinho" autoplay muted loop>
 
-        <source src="background.mp4">
+    <video autoplay loop muted class="videozinho">
+
+        <source src="background-loop-final.mp4" type="video/mp4">
+
 
     </video>
 
     <div class="formbold-form-wrapper">
+
+
+
            <img class="logozinha" src="blackout-logo.png">
       <form action="https://formbold.com/s/FORM_ID" method="POST">
         <div class="formbold-mb-6">
@@ -265,14 +270,9 @@
     }
     body {
       font-family: 'Inter', sans-serif;
+      
     }
 
-    @media screen and (max-width: 768px) {
-        body {
-            width: 100%;
-            flex-direction: column;
-        }
-    }
 
     .formbold-main-wrapper {
       display: flex;
@@ -334,7 +334,7 @@
     }
     .formbold-radio-flex {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       gap: 10px;
     }
     .formbold-radio-label {
@@ -418,15 +418,9 @@
     .videozinho {
         display: flex;
         position: fixed;
-        z-index: -1;
         top: 0px;
         left: 0px;
-        height: 100%;
-        width: 100%;
-        padding: 0%;
-        margin: 0%;
         object-fit: cover;
-
+        z-index: -1;
     }
-
   </style>
